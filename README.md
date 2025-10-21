@@ -1,40 +1,38 @@
-Showcase
+# Showcase
 
 Personal portfolio site featuring projects, design systems, and full‑stack experiments.
 
-Overview
+---
 
-Showcase is a modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS.
-It highlights professional projects, technologies, and design consistency across the vmoreira.dev ecosystem.
+## Overview
 
-Live Demo
+**Showcase** is a modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS.  
+It highlights professional projects, technologies, and design consistency across the **vmoreira.dev** ecosystem.
 
-https://vmoreira.dev
+---
 
-Stack
+## 🔗 Live Demo
 
-Next.js (App Router)
+[https://vmoreira.dev](https://vmoreira.dev)
 
-TypeScript
+---
 
-Tailwind CSS
+## 🧱 Stack
 
-Framer Motion
+- Next.js (App Router)  
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- ShadCN/UI  
+- Vercel (Deployment)
 
-ShadCN/UI
+---
 
-Vercel (Deployment)
+## ✨ Features
 
-Features
-
-Responsive, high‑performance portfolio layout
-
-Dynamic project grid with live previews and links
-
-Framer Motion animations and transitions
-
-OG meta images for shareable previews
-
-Integrated routing for “About,” “Projects,” and “Contact”
-
-Deployed on Vercel with custom domain configuration
+- Responsive, high‑performance portfolio layout  
+- Dynamic project grid with live previews and links  
+- Framer Motion animations and transitions  
+- OG meta images for shareable previews  
+- Integrated routing for “About,” “Projects,” and “Contact”  
+- Deployed on Vercel with custom domain configuration
