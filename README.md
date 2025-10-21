@@ -6,18 +6,18 @@ Personal portfolio site featuring projects, design systems, and full‑stack exp
 
 ## Overview
 
-**Showcase** is a modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS.  
-It highlights professional projects, technologies, and design consistency across the **vmoreira.dev** ecosystem.
+Showcase is a modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS.  
+It highlights professional projects, technologies, and design consistency across the vmoreira.dev ecosystem.
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
-[https://vmoreira.dev](https://vmoreira.dev)
+https://vmoreira.dev
 
 ---
 
-## 🧱 Stack
+## Stack
 
 - Next.js (App Router)  
 - TypeScript  
@@ -28,7 +28,7 @@ It highlights professional projects, technologies, and design consistency across
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive, high‑performance portfolio layout  
 - Dynamic project grid with live previews and links  
