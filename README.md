@@ -19,12 +19,12 @@ https://vmoreira.dev
 
 ## Stack
 
-- Next.js (App Router)  
+- Next.js
 - TypeScript  
 - Tailwind CSS  
 - Framer Motion  
 - ShadCN/UI  
-- Vercel (Deployment)
+- Vercel
 
 ---
 
