@@ -1,11 +1,13 @@
 # Showcase
 
-Personal portfolio site featuring projects, design systems, and full‑stack experiments.
-
----
 <p align="center">
 <img width="450" height="750" alt="Showcase Preview" src="https://github.com/user-attachments/assets/cbde7e1c-f7c7-46b1-ae2c-eca562f52cf2" />
 </p>
+
+Personal portfolio site featuring projects, design systems, and full‑stack experiments.
+
+---
+
 ## Overview
 
 Showcase is a modern developer portfolio built with Next.js, TypeScript, and Tailwind CSS.  
