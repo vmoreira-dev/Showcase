@@ -1,7 +1,7 @@
 # Showcase
 
 <p align="center">
-<img width="450" height="750" alt="11220b5f-bf59-459b-b5f5-a325c9e7784c" src="https://github.com/user-attachments/assets/b2eef9ef-a238-497a-b9a3-bf5c938b3266" />
+<img width="1024" height="1500" alt="showcase" src="https://github.com/user-attachments/assets/bbf5b48b-c63d-4502-b9c5-f86a4e36da71" />
 </p>
 Personal portfolio site featuring projects, design systems, and full‑stack experiments.
 
