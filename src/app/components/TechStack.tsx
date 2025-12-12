@@ -1,48 +1,45 @@
-// src/app/components/TechStack.tsx
-
 export default function TechStack() {
+  const tech = [
+    { name: "Next.js", icon: "/images/tech/next.svg" },
+    { name: "TypeScript", icon: "/images/tech/typescript.svg" },
+    { name: "Tailwind", icon: "/images/tech/tailwind.svg" },
+    { name: "Node.js", icon: "/images/tech/node.svg" },
+  ];
+
   return (
-    <section className="flex flex-col items-center gap-10 py-12">
+    <div className="mt-12 flex items-center justify-center gap-10">
+      {tech.map((t) => (
+        <div
+          key={t.name}
+          className="
+            group relative flex flex-col items-center
+            opacity-60 transition-all duration-300
+            hover:opacity-100
+          "
+        >
+          <img
+            src={t.icon}
+            alt={t.name}
+            className="
+              h-7 w-auto
+              transition-all duration-300
+              group-hover:scale-110
+              group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]
+            "
+          />
 
-      {/* Glow line */}
-      <div className="w-full max-w-xl h-px bg-white/10 shadow-[0_0_20px_rgba(0,150,255,0.4)]"></div>
-
-      {/* Tech icons */}
-      <div className="flex items-center justify-center gap-10 opacity-80">
-
-        {/* Next.js */}
-        <img
-          src="/images/tech/next.svg"
-          alt="Next.js"
-          className="h-10 w-auto"
-        />
-
-        {/* TypeScript */}
-        <img
-          src="/images/tech/typescript.svg"
-          alt="TypeScript"
-          className="h-10 w-auto"
-        />
-
-        {/* Whatever icon you used (the blue circles dot) */}
-        <img
-          src="/images/tech/ui.svg"
-          alt="UI"
-          className="h-10 w-auto"
-        />
-
-        {/* Node */}
-        <img
-          src="/images/tech/node.svg"
-          alt="Node.js"
-          className="h-10 w-auto"
-        />
-
-      </div>
-
-      {/* Bottom glow line */}
-      <div className="w-full max-w-xl h-px bg-white/10 shadow-[0_0_20px_rgba(0,150,255,0.4)]"></div>
-
-    </section>
+          <span
+            className="
+              mt-2 text-xs tracking-wide text-white/70
+              opacity-0 translate-y-1
+              transition-all duration-300
+              group-hover:opacity-100 group-hover:translate-y-0
+            "
+          >
+            {t.name}
+          </span>
+        </div>
+      ))}
+    </div>
   );
 }
