@@ -9,19 +9,19 @@ export const projects = [
   },
   {
     title: "Aether",
-    tagline: "Financial insights with purpose.",
+    tagline: "Financial Lens",
     image: "/images/projects/aether.webp",
     href: "https://aether.vmoreira.dev",
   },
   {
     title: "Mercuria",
-    tagline: "Product design with precision.",
+    tagline: "Luxury Storefront",
     image: "/images/projects/mercuria.webp",
     href: "https://mercuria.vmoreira.dev",
   },
   {
     title: "Stratos",
-    tagline: "Responsive UI in motion.",
+    tagline: "Weather Dashboard",
     image: "/images/projects/stratos.webp",
     href: "https://stratos.vmoreira.dev",
   },
