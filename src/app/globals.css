@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.bg-nebula {
+  background-image: url("/textures/nebula.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-underwater {
+  background-image: url("/textures/underwater.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
