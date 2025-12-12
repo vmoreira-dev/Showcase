@@ -1,30 +1,27 @@
 // app/components/FeaturedProjects.tsx
-import ProjectCard from "./ProjectCard";
 import { projects } from "../_data/projects";
+
+import ProjectCard from "./ProjectCard";
 
 export default function FeaturedProjects() {
   return (
-    <>
-      {/* Scroll anchor */}
-      <div id="projects" className="relative -top-1" />
+    <section
+      id="projects"
+      className="mt-32 pb-40 flex flex-col gap-32"
+    >
+      <h2 className="text-center text-2xl font-semibold tracking-tight">
+        Featured Projects
+      </h2>
 
-      <section className="mt-32">
-        <h2 className="text-3xl font-semibold tracking-tight text-center mb-24">
-          Featured Projects
-        </h2>
-
-        <div className="space-y-40 max-w-5xl mx-auto px-6">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={`${project.slug}-${index}`}
-              title={project.title}
-              tagline={project.tagline}
-              image={project.image}
-              featured
-            />
-          ))}
-        </div>
-      </section>
-    </>
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.href}
+          title={project.title}
+          tagline={project.tagline}
+          image={project.image}
+          href={project.href}
+        />
+      ))}
+    </section>
   );
 }

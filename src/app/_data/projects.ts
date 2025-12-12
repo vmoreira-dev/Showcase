@@ -1,5 +1,3 @@
-// app/_data/projects.ts
-
 export const projects = [
   {
     title: "Horizon",
