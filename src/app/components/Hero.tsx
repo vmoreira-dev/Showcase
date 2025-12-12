@@ -11,9 +11,8 @@ export default function Hero() {
         FULL-STACK DEVELOPER
       </p>
 
-      {/* Primary actions */}
+      {/* Buttons */}
       <div className="mt-12 flex items-center gap-6">
-        {/* Explore */}
         <a
           href="#projects"
           className="px-10 py-3 rounded-lg
@@ -25,7 +24,6 @@ export default function Hero() {
           EXPLORE
         </a>
 
-        {/* GitHub */}
         <a
           href="https://github.com/vmoreira-dev"
           target="_blank"
@@ -40,14 +38,13 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Tech stack */}
+      {/* Tech icons */}
       <div className="mt-16 flex items-center gap-10 opacity-70">
         <img src="/images/tech/next.svg" alt="Next.js" className="h-7" />
         <img src="/images/tech/typescript.svg" alt="TypeScript" className="h-7" />
         <img src="/images/tech/ui.svg" alt="UI" className="h-7" />
         <img src="/images/tech/node.svg" alt="Node.js" className="h-7" />
       </div>
-
     </section>
   );
 }
