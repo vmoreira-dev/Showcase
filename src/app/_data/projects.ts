@@ -8,7 +8,7 @@ export const projects = [
   {
     title: "Aether",
     tagline: "Financial Lens",
-    image: "/images/projects/aether.webp",
+    image: "/images/projects/aether.png",
     href: "https://aether.vmoreira.dev",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: "Stratos",
     tagline: "Weather Dashboard",
-    image: "/images/projects/stratos.webp",
+    image: "/images/projects/stratos.png",
     href: "https://stratos.vmoreira.dev",
   },
 ];
