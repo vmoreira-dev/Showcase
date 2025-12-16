@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "Stratos",
-    tagline: "Weather distilled to what matters",
+    tagline: "Weather distilled to what really matters",
     image: "/images/projects/stratos.png",
     href: "https://stratos.vmoreira.dev",
   },

@@ -17,29 +17,55 @@ export default function ProjectCard({
     <Link href={href} target="_blank" rel="noopener noreferrer" className="block">
       <article
         className="
-          group relative
-          max-w-5xl h-[220px] mx-auto
+          group relative mx-auto max-w-5xl
+          h-[220px]
           rounded-3xl
           bg-white/60 backdrop-blur-xl
+          border border-black/5
           transition-all duration-300 ease-out
           hover:-translate-y-1
           hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
         "
       >
-        {/* Floating preview panel */}
-        {image && (
-          <div
-            className="
-              absolute right-8 top-1/2 -translate-y-1/2
-              w-[300px] h-[170px]
-              rounded-xl overflow-hidden
-              bg-white/70 backdrop-blur-sm
-              shadow-[0_18px_40px_rgba(0,0,0,0.10)]
-              transition-all duration-300 ease-out
-              group-hover:-translate-y-[55%]
-              group-hover:shadow-[0_30px_80px_rgba(0,0,0,0.14)]
-            "
-          >
+        {/* White veil — opacity only, no blur */}
+        <div
+          className="
+            absolute inset-0 rounded-3xl
+            bg-white/50
+            transition-opacity duration-300
+            group-hover:opacity-0
+            pointer-events-none
+          "
+        />
+
+        {/* Product preview — clear, confident */}
+      {image && (
+        <div
+          className="
+            absolute right-8 top-1/2 -translate-y-1/2
+            w-[300px] h-[170px]
+            rounded-xl overflow-hidden
+            bg-white/70 backdrop-blur-sm
+
+            opacity-40
+            transition-all duration-300 ease-out
+            group-hover:opacity-100
+            group-hover:shadow-[0_30px_80px_rgba(0,0,0,0.14)]
+          "
+        >
+          {/* Diffusion mask */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-r
+          from-white/70
+          via-white/40
+          to-transparent
+          transition-opacity duration-300
+          group-hover:opacity-0
+          pointer-events-none
+        "
+      />
             <img
               src={image}
               alt={title}
