@@ -1,46 +1,24 @@
 @import "tailwindcss";
 
+/* =========================
+   Root variables (locked)
+   ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6f7f8; /* cool off-white */
+  --foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* =========================
+   Base styles
+   ========================= */
 body {
-  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
 
-
-.bg-nebula {
-  background-image: url("/textures/nebula.webp");
-  background-size: cover;
-  background-position: center;
+  /* Ambient background image */
+  background-image: url("/textures/bg-offwhite-ambient.webp");
   background-repeat: no-repeat;
-}
-
-.bg-underwater {
-  background-image: url("/textures/underwater.webp");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-body {
-  background-color: #020617; /* deep blue, not black */
+  background-position: top right;
+  background-attachment: fixed;
 }
