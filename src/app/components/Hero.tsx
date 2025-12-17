@@ -27,6 +27,7 @@ export default function Hero() {
             hover:border-black/20
             hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]
           "
+          
         >
           EXPLORE
         </a>
