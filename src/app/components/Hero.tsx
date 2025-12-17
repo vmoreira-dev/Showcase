@@ -1,6 +1,7 @@
 // app/components/Hero.tsx
 import TechStack from "./TechStack";
 
+
 export default function Hero() {
   return (
     <section className="flex flex-col items-center pt-32 pb-28 text-center">
