@@ -1,4 +1,6 @@
 // app/components/Hero.tsx
+import TechStack from "./TechStack";
+
 export default function Hero() {
   return (
     <section className="flex flex-col items-center pt-44 pb-36 text-center">
@@ -50,12 +52,7 @@ export default function Hero() {
       </div>
 
       {/* Tech icons */}
-      <div className="mt-20 flex items-center gap-10 opacity-60">
-        <img src="/images/tech/next.svg" alt="Next.js" className="h-7" />
-        <img src="/images/tech/typescript.svg" alt="TypeScript" className="h-7" />
-        <img src="/images/tech/tailwind.svg" alt="Tailwind CSS" className="h-7" />
-        <img src="/images/tech/node.svg" alt="Node.js" className="h-7" />
-      </div>
+        <TechStack />
     </section>
   );
 }

@@ -1,45 +1,34 @@
-export default function TechStack() {
-  const tech = [
-    { name: "Next.js", icon: "/images/tech/next.svg" },
-    { name: "TypeScript", icon: "/images/tech/typescript.svg" },
-    { name: "Tailwind", icon: "/images/tech/tailwind.svg" },
-    { name: "Node.js", icon: "/images/tech/node.svg" },
-  ];
-
+function TechIcon({ src }: { src: string }) {
   return (
-    <div className="mt-12 flex items-center justify-center gap-10">
-      {tech.map((t) => (
-        <div
-          key={t.name}
-          className="
-            group relative flex flex-col items-center
-            opacity-60 transition-all duration-300
-            hover:opacity-100
-          "
-        >
-          <img
-            src={t.icon}
-            alt={t.name}
-            className="
-              h-7 w-auto
-              transition-all duration-300
-              group-hover:scale-110
-              group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]
-            "
-          />
+    <span
+      className="
+        inline-block
+        h-8 w-8
+        bg-neutral-600
+        hover:bg-[#C6A75E]
+        transition-colors duration-200
+      "
+      style={{
+        WebkitMaskImage: `url(${src})`,
+        maskImage: `url(${src})`,
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        maskPosition: "center",
+        WebkitMaskSize: "contain",
+        maskSize: "contain",
+      }}
+    />
+  );
+}
 
-          <span
-            className="
-              mt-2 text-xs tracking-wide text-white/70
-              opacity-0 translate-y-1
-              transition-all duration-300
-              group-hover:opacity-100 group-hover:translate-y-0
-            "
-          >
-            {t.name}
-          </span>
-        </div>
-      ))}
+export default function TechStack() {
+  return (
+    <div className="mt-12 flex items-center justify-center gap-9">
+      <TechIcon src="/images/tech/next.svg" />
+      <TechIcon src="/images/tech/typescript.svg" />
+      <TechIcon src="/images/tech/tailwind.svg" />
+      <TechIcon src="/images/tech/node.svg" />
     </div>
   );
 }
