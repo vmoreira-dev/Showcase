@@ -6,8 +6,8 @@
 
 ## Overview
 
-Origin is a lightweight portfolio surface built to present projects with clarity and consistency.  
-Work is organized as finished systems, emphasizing layout, motion, and visual hierarchy over content volume.
+Origin is a personal portfolio built to present finished work.  
+Projects are displayed as complete systems, with focus on layout, spacing, and visual control.
 
 View https://vmoreira.dev
 
@@ -15,11 +15,11 @@ View https://vmoreira.dev
 
 ## Design
 
-- Minimal surface area  
-- Strong visual hierarchy  
-- Controlled motion and transitions  
-- Project-first presentation  
-- Designed to stay out of the way  
+- Strong negative space  
+- Project-first layout  
+- Restrained motion  
+- Minimal copy  
+- No decorative noise  
 
 ---
 
