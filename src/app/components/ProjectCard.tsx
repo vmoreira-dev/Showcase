@@ -18,7 +18,14 @@ export default function ProjectCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full max-w-5xl mx-auto"
+      className="
+        block w-full max-w-5xl mx-auto
+        focus-visible:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-black/20
+        focus-visible:ring-offset-4
+        focus-visible:ring-offset-white/60
+      "
     >
       <article
         className="
@@ -27,8 +34,8 @@ export default function ProjectCard({
           rounded-3xl
           bg-white/60 backdrop-blur-xl
           border border-black/5
-          transition-all duration-400 ease-[cubic-bezier(.16,1,.3,1)]
-          hover:-translate-y-1
+          transition-all duration-300 ease-out
+          hover:-translate-y-1.5
           hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
           cursor-pointer
         "
@@ -38,13 +45,14 @@ export default function ProjectCard({
           className="
             absolute inset-0 rounded-3xl
             bg-white/40
-            transition-opacity duration-400 ease-[cubic-bezier(.16,1,.3,1)]
+            transition-opacity duration-500 ease-out
+
             group-hover:opacity-0
             pointer-events-none
           "
         />
 
-        {/* Product preview */}
+        {/* Product preview — static, grounded */}
         {image && (
           <div
             className="
@@ -52,10 +60,10 @@ export default function ProjectCard({
               w-[300px] h-[170px]
               rounded-xl overflow-hidden
               bg-white/70 backdrop-blur-sm
-              opacity-55
-              transition-all duration-400 ease-[cubic-bezier(.16,1,.3,1)]
-              group-hover:opacity-85
-              group-hover:shadow-[0_30px_80px_rgba(0,0,0,0.14)]
+              opacity-70
+              transition-[opacity,box-shadow] duration-500 ease-out
+              group-hover:opacity-90
+              group-hover:shadow-[0_25px_60px_rgba(0,0,0,0.14)]
               pointer-events-none
             "
           >
@@ -66,7 +74,7 @@ export default function ProjectCard({
                 from-white/90
                 via-white/55 via-30%
                 to-white/0
-                transition-opacity duration-400 ease-[cubic-bezier(.16,1,.3,1)]
+                transition-opacity duration-300 ease-out
                 group-hover:opacity-0
                 pointer-events-none
               "
