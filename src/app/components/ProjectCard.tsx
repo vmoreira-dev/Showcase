@@ -14,10 +14,15 @@ export default function ProjectCard({
   href,
 }: ProjectCardProps) {
   return (
-    <Link href={href} target="_blank" rel="noopener noreferrer" className="block">
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full max-w-5xl mx-auto"
+    >
       <article
         className="
-          group relative mx-auto max-w-5xl
+          group relative w-full
           h-[220px]
           rounded-3xl
           bg-white/60 backdrop-blur-xl
@@ -25,10 +30,10 @@ export default function ProjectCard({
           transition-all duration-400 ease-[cubic-bezier(.16,1,.3,1)]
           hover:-translate-y-1
           hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
-          hover:cursor-pointer
+          cursor-pointer
         "
       >
-        {/* White veil — lighter so gradient does the work */}
+        {/* White veil */}
         <div
           className="
             absolute inset-0 rounded-3xl
@@ -51,9 +56,9 @@ export default function ProjectCard({
               transition-all duration-400 ease-[cubic-bezier(.16,1,.3,1)]
               group-hover:opacity-85
               group-hover:shadow-[0_30px_80px_rgba(0,0,0,0.14)]
+              pointer-events-none
             "
           >
-            {/* Diffusion mask — strong left → clear right */}
             <div
               className="
                 absolute inset-0 z-10
@@ -66,7 +71,6 @@ export default function ProjectCard({
                 pointer-events-none
               "
             />
-
             <img
               src={image}
               alt={title}
@@ -77,12 +81,10 @@ export default function ProjectCard({
 
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-center px-10">
-          <h3 className="text-2xl font-semibold text-slate-900 transition-colors group-hover:text-slate-950">
+          <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-slate-950">
             {title}
           </h3>
-          <p className="mt-2 text-slate-600">
-            {tagline}
-          </p>
+          <p className="mt-2 text-slate-600">{tagline}</p>
         </div>
       </article>
     </Link>
