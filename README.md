@@ -1,4 +1,4 @@
-# Showcase
+# Origin
 
 ![Showcase — Portfolio UI](./public/assets/showcase.webp)
 
