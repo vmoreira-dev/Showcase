@@ -1,39 +1,34 @@
 # Origin
 
-![Showcase — Portfolio UI](./public/assets/showcase.webp)
-
-The command center for projects, systems, and full-stack experimentation
+![Origin — Portfolio UI](./public/assets/showcase.webp)
 
 ---
 
 ## Overview
 
-Showcase is a personal portfolio site built to present projects, technologies, and visual systems with consistency and performance. It serves as the central hub for the vmoreira.dev ecosystem, highlighting both UI design and full-stack engineering work.
+Origin is a lightweight portfolio surface built to present projects with clarity and consistency.  
+Work is organized as finished systems, emphasizing layout, motion, and visual hierarchy over content volume.
+
+View https://vmoreira.dev
 
 ---
 
-## Live Demo
+## Design
 
-https://vmoreira.dev
+- Minimal surface area  
+- Strong visual hierarchy  
+- Controlled motion and transitions  
+- Project-first presentation  
+- Designed to stay out of the way  
 
 ---
 
-## Stack
+## Execution
 
-- Next.js (App Router)
+- Next.js (App Router)  
+- React  
 - TypeScript  
 - Tailwind CSS  
 - Framer Motion  
 - shadcn/ui  
 - Vercel  
-
----
-
-## Features
-
-- High-performance, responsive portfolio layout  
-- Dynamic project grid with live previews and external links  
-- Framer Motion-powered animations and transitions  
-- Open Graph meta images for social sharing  
-- Integrated routing for About, Projects, and Contact  
-- Custom domain deployment on Vercel  
