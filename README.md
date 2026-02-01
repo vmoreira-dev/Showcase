@@ -6,7 +6,7 @@
 
 ## Overview
 
-Origin is a portfolio for presenting finished projects as complete, self-contained systems.
+Origin is a portfolio showcasing selected projects.
 
 **[Live Demo](https://vmoreira.dev)**
 
